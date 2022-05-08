@@ -1,0 +1,228 @@
+<div class="container-fluid">
+  <div class="m-t-sm" *ngIf="type=='simple'">
+    <div class="ias-max-content-width">
+      <h2>Dynamic Form And Validation</h2>
+      <button class="btn ias-btn-icon btn-default pull-right" aria-label="Close">
+        <span class="ias-icon ias-icon-close_thick" aria-hidden="true"></span>
+      </button>
+      <p class="ias-page-instructions"> Validation provides a means to ensure the user is
+        inputting usable data into a form. Form validation can be expressed to a user initially by denoting required
+        inputs with the required symbol; or, after a user enters invalid information into the form through warnings and
+        invalid states. </p>
+
+    </div>
+    <h3>A Basic Form with Validation</h3>
+    <div class="demo-code ">
+      <div>
+        <dynamic-forms [inputFields]="inputfields" (onSubmit)="submit($event)">
+          <div class=" btn-container m-t-md">
+            <button type="submit" class="btn-primary btn">
+              Save
+            </button>
+            <button type="button" class="js-details-target btn">
+              Reset
+            </button>
+          </div>
+        </dynamic-forms>
+
+        <pre>
+        <code [highlight]="formValue|json">
+        </code>
+      </pre>
+      </div>
+
+      <ux-tabset class="ias-tabset">
+        <ux-tab heading="form.components.ts">
+          <pre><code [highlight]="simpleFormTs">
+
+          </code></pre>
+
+        </ux-tab>
+        <ux-tab heading="form.components.html" id="tab-two">
+          <pre><code [highlight]="simpleFormHtml    ">
+
+            </code></pre>
+
+
+        </ux-tab>
+
+        <ux-tab heading="form.module.ts" id="tab-three">
+          <pre><code [highlight]="modulesToImport">
+            </code></pre>
+        </ux-tab>
+        <ux-tab heading="console log" id="tab-four">
+          <pre><code [highlight]="consoleLog">
+              </code></pre>
+        </ux-tab>
+
+      </ux-tabset>
+    </div>
+  </div>
+  <div class="m-t-sm" *ngIf="type=='all'">
+    <div class="ias-max-content-width">
+      <h2>Dynamic Form And Validation</h2>
+      <button class="btn ias-btn-icon btn-default pull-right" aria-label="Close">
+        <span class="ias-icon ias-icon-close_thick" aria-hidden="true"></span>
+      </button>
+      <p class="ias-page-instructions"> Validation provides a means to ensure the user is
+        inputting usable data into a form. Form validation can be expressed to a user initially by denoting required
+        inputs with the required symbol; or, after a user enters invalid information into the form through warnings and
+        invalid states. </p>
+
+    </div>
+    <h3>A Basic Form with Validation</h3>
+    <div class="demo-code ">
+      <div>
+        <dynamic-forms [inputFields]="complexForm" (onSubmit)="submit($event)">
+          <div class=" btn-container m-t-md">
+            <button type="submit" class="btn-primary btn">
+              Save
+            </button>
+            <button type="reset" class="js-details-target btn">
+              Reset
+            </button>
+          </div>
+        </dynamic-forms>
+        <pre>
+        <code [highlight]="formValue|json">
+        </code>
+      </pre>
+      </div>
+      <ux-tabset class="ias-tabset">
+        <ux-tab heading="form.components.ts">
+          <pre><code [highlight]="complexFormTs">
+
+          </code></pre>
+
+        </ux-tab>
+        <ux-tab heading="form.components.html" id="tab-two">
+          <pre>
+            <code [highlight]="simpleFormHtml">
+            </code>
+          </pre>
+        </ux-tab>
+
+        <ux-tab heading="form.module.ts" id="tab-three">
+          <pre><code [highlight]="modulesToImport">
+            </code></pre>
+        </ux-tab>
+        <ux-tab heading="console log" id="tab-four">
+          <pre><code [highlight]="consoleLog">
+              </code></pre>
+        </ux-tab>
+
+      </ux-tabset>
+    </div>
+  </div>
+  <div class="m-t-sm" *ngIf="type=='multiValue'">
+    <div class="ias-max-content-width">
+      <h2>Dynamic Multi Value Form And Validation</h2>
+      <button class="btn ias-btn-icon btn-default pull-right" aria-label="Close">
+        <span class="ias-icon ias-icon-close_thick" aria-hidden="true"></span>
+      </button>
+      <p class="ias-page-instructions"> Validation provides a means to ensure the user is
+        inputting usable data into a form. Form validation can be expressed to a user initially by denoting required
+        inputs with the required symbol; or, after a user enters invalid information into the form through warnings and
+        invalid states. </p>
+
+    </div>
+    <h3>A Multi Value Form with Validation</h3>
+    <div class="demo-code ">
+      <div>
+        <dynamic-forms [inputFields]="multiValueForm" (onSubmit)="submit($event)">
+          <div class=" btn-container m-t-md">
+            <button type="submit" class="btn-primary btn">
+              Save
+            </button>
+            <button type="reset" class="js-details-target btn">
+              Reset
+            </button>
+          </div>
+        </dynamic-forms>
+        <pre>
+          <code [highlight]="formValue|json">
+          </code>
+        </pre>
+      </div>
+      <ux-tabset class="ias-tabset">
+        <ux-tab heading="form.components.ts">
+          <pre><code [highlight]="multiValueFormTs">
+          </code></pre>
+        </ux-tab>
+        <ux-tab heading="form.components.html" id="tab-two">
+          <pre>
+            <code [highlight]="simpleFormHtml">
+            </code>
+          </pre>
+        </ux-tab>
+
+        <ux-tab heading="form.module.ts" id="tab-three">
+          <pre><code [highlight]="modulesToImport">
+            </code></pre>
+        </ux-tab>
+        <ux-tab heading="console log" id="tab-four">
+          <pre><code [highlight]="consoleLog">
+              </code></pre>
+        </ux-tab>
+
+      </ux-tabset>
+    </div>
+  </div>
+
+  <div class="m-t-sm" *ngIf="type=='typeAhead'">
+    <div class="ias-max-content-width">
+      <h2>Type Ahead Value Form And Validation</h2>
+      <button class="btn ias-btn-icon btn-default pull-right" aria-label="Close">
+        <span class="ias-icon ias-icon-close_thick" aria-hidden="true"></span>
+      </button>
+      <p class="ias-page-instructions"> Validation provides a means to ensure the user is
+        inputting usable data into a form. Form validation can be expressed to a user initially by denoting required
+        inputs with the required symbol; or, after a user enters invalid information into the form through warnings and
+        invalid states. </p>
+
+    </div>
+    <h3>A Type Ahead Form with Validation</h3>
+    <div class="demo-code ">
+      <div>
+        <dynamic-forms [inputFields]="typeAheadForm" (onSubmit)="submit($event)">
+          <div class=" btn-container m-t-md">
+            <button type="submit" class="btn-primary btn">
+              Save
+            </button>
+            <button type="reset" class="js-details-target btn">
+              Reset
+            </button>
+          </div>
+        </dynamic-forms>
+
+        <pre>
+        <code [highlight]="formValue|json">
+        </code>
+      </pre>
+      </div>
+
+      <ux-tabset class="ias-tabset">
+        <ux-tab heading="form.components.ts">
+          <pre><code [highlight]="typeAheadFormTs">
+          </code></pre>
+        </ux-tab>
+        <ux-tab heading="form.components.html" id="tab-two">
+          <pre>
+            <code [highlight]="simpleFormHtml">
+            </code>
+          </pre>
+        </ux-tab>
+
+        <ux-tab heading="form.module.ts" id="tab-three">
+          <pre><code [highlight]="modulesToImport">
+            </code></pre>
+        </ux-tab>
+        <ux-tab heading="console log" id="tab-four">
+          <pre><code [highlight]="consoleLog">
+              </code></pre>
+        </ux-tab>
+
+      </ux-tabset>
+    </div>
+  </div>
+</div>

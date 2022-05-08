@@ -1,0 +1,28 @@
+<div class="ias-page">
+  <div class="ias-page-header">
+    <div class="ias-header-bar">
+      <div class="ias-header-bar_logo">
+        <img src="https://microfocus.github.io/ias-bootstrap/assets/images/IAS_UX_100.png" width="50" height="50">
+      </div>
+      <div class="ias-header-bar_title">UI Components</div>
+      <div class="ias-header-bar_menu" dropdown>
+        <span>Developer</span>
+      </div>
+    </div>
+  </div>
+  <div class="ias-content-with-nav">
+    <div class="panel ias-panel p-nill">
+      <div class="panel-body p-nill">
+        <ux-navigation [items]="navigation" [tree]="true">
+        </ux-navigation>
+      </div>
+    </div>
+
+
+    <div>
+      <router-outlet></router-outlet>
+      <div class="panel-footer">@ 2022 ApurbaMondal</div>
+    </div>
+
+  </div>
+</div>
