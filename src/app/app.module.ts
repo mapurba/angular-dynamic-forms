@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NavigationModule, PageHeaderModule, SidePanelModule, TabsetModule } from '@ux-aspects/ux-aspects';
-import { DynamicFormModule } from 'dynamic-forms';
+import { DynamicFormModule } from '@netiq/dynamic-forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AnguarFormsComponent } from './demos/anguar-forms/anguar-forms.component';

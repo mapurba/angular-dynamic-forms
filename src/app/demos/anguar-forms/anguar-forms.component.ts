@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators } from '@angular/forms';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { CheckBox, Dropdown, MultiValue, Radio, TextArea, Textbox, TypeAhead } from 'dynamic-forms';
+import { CheckBox, Dropdown, MultiValue, Radio, TextArea, Textbox, TypeAhead } from '@netiq/dynamic-forms';
 @Component({
   selector: 'app-anguar-forms',
   templateUrl: './anguar-forms.component.html',
@@ -168,7 +168,7 @@ export class AnguarFormsComponent implements OnInit {
   simpleFormTs = `
 
   import { Component, OnInit } from '@angular/core';
-  import { TextArea, Textbox } from 'dynamic-forms';
+  import { TextArea, Textbox } from '@netiq/dynamic-forms';
   
   export class FormsComponent implements OnInit {
 
@@ -206,7 +206,7 @@ export class AnguarFormsComponent implements OnInit {
 </dynamic-forms>`
 
   modulesToImport = `
-  import { DynamicFormModule } from 'dynamic-forms';
+  import { DynamicFormModule } from '@netiq/dynamic-forms';
 
   imports: [
     DynamicFormModule 
@@ -218,7 +218,7 @@ export class AnguarFormsComponent implements OnInit {
 
   complexFormTs = `
   import { Component, OnInit } from '@angular/core';
-  import { TextArea, Textbox } from 'dynamic-forms';
+  import { TextArea, Textbox } from '@netiq/dynamic-forms';
   
   export class FormsComponent implements OnInit {
 
@@ -310,7 +310,7 @@ export class AnguarFormsComponent implements OnInit {
 
   multiValueFormTs = `
   import { Component, OnInit } from '@angular/core';
-  import { TextArea, Textbox } from 'dynamic-forms';
+  import { TextArea, Textbox } from '@netiq/dynamic-forms';
   
   export class FormsComponent implements OnInit {
 
@@ -352,7 +352,7 @@ export class AnguarFormsComponent implements OnInit {
   typeAheadFormTs = `
 
   import { Component, OnInit } from '@angular/core';
-  import { TextArea, Textbox } from 'dynamic-forms';
+  import { TextArea, Textbox } from '@netiq/dynamic-forms';
   
   export class FormsComponent implements OnInit {
 
